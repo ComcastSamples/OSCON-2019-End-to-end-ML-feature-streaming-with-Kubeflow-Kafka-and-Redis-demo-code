@@ -1,0 +1,9 @@
+json={
+  "data": {
+    "names": ["MedInc", "HouseAge", "AveRooms", "AveBedrms", "Population", "AveOccup", "Latitude", "Longitude"],
+    "tensor": {
+      "shape": [1, 8],
+      "values": [-0.18853331, -0.68647699, -0.70930669,  0.19569532, -0.06488387, -0.11435297,  0.91677418, -1.39272221]
+    }
+  }
+}

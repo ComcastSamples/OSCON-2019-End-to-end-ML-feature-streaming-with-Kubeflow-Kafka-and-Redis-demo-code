@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: housing-kafka-consumer
+  labels:
+    app: housing-kafka-consumer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: housing-kafka-consumer
+  template:
+    metadata:
+      labels:
+        app: housing-kafka-consumer
+    spec:
+      containers:
+      - name: housing-kafka-consumer
+        image: housing-kafka-consumer:0.1

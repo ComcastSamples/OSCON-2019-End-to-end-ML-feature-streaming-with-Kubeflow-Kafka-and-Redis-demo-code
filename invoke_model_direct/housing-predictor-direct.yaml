@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: housing-predictor-direct
+  labels:
+    app: housing-predictor-direct
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: housing-predictor-direct
+  template:
+    metadata:
+      labels:
+        app: housing-predictor-direct
+    spec:
+      containers:
+      - name: housing-predictor-direct
+        image: housing-model-predictor-direct:0.1

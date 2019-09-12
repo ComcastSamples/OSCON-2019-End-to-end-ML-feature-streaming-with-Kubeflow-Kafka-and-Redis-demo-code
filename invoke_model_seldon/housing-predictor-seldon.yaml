@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: housing-predictor-seldon
+  labels:
+    app: housing-predictor-seldon
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: housing-predictor-seldon
+  template:
+    metadata:
+      labels:
+        app: housing-predictor-seldon
+    spec:
+      containers:
+      - name: housing-predictor-seldon
+        image: housing-model-predictor-seldon:0.1

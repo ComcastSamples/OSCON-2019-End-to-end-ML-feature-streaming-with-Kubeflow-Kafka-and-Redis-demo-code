@@ -1,0 +1,2 @@
+# scikit-learn, pandas, numpy and scipy are included in the 'alpine-python-machinelearning' image
+redis==3.2.1

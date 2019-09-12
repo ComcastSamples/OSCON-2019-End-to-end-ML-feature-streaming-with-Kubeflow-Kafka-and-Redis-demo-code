@@ -1,0 +1,10 @@
+target/
+.idea/
+.DS_Store
+**.pkl
+.ipynb_checkpoints/
+__pycache__/
+.trash/
+kafka_2.11-2.2.0/
+kafka_2.11-2.2.0.tgz
+scikit_learn_data/
